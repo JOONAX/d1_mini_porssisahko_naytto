@@ -1,1 +1,24 @@
-"# d1_mini_porssisahko_naytto" 
+# D1 mini pörssisähkö näyttö
+
+![kuva](https://github.com/JOONAX/d1_mini_porssisahko_naytto/assets/46499585/3884ae21-d9d1-453e-a177-d1bcbf562583)
+
+
+## Kuvaus
+Tämä näyttää ajankohtaisen pörssisähkön hinnan näytöllä. Projekti käyttää D1 mini IoT-kehitysalustaa, jossa on ESP8266-piiri. Näyttönä toimii 0,96 tuuman OLED-näyttö. Tämä yhdistetään langattomaan verkkoon ja se hakee pörssisähkön hinnan porssisahko.net API:sta. Hinta päivitetään ensin käynnistettäessä ja sen jälkeen tasatunnein.
+
+## Käytetyt kirjastot
+- Wire: https://github.com/esp8266/Arduino/tree/master/libraries/Wire
+- Adafruit_GFX: https://github.com/adafruit/Adafruit-GFX-Library
+- Adafruit_SSD1306: https://github.com/adafruit/Adafruit_SSD1306
+- ESP8266WiFi: https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
+- ESP8266HTTPClient: https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient
+- NTPClient: https://github.com/arduino-libraries/NTPClient
+- WiFiUdp: https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
+- ArduinoJson: https://github.com/bblanchon/ArduinoJson
+
+## Asennus ja käyttö
+1. Asenna Arduino IDE
+2. Lisää tarvittavat kirjastot Arduino IDE:een.
+3. Liitä kehitysalusta tietokoneeseen ja valitse oikea laite sekä portti Arduino IDE:ssä.
+4. Muokkaa Wi-Fi-verkon SSID ja salasana sekä tarvittaessa SHA1-sormenjälki api.porssisahko.net SSL-sertifikaattiin.
+5. Lataa koodi kehitysalustaan.
